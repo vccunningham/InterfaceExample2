@@ -23,11 +23,6 @@ namespace InterfaceExample2 {
                 _ => 0 // everything else
             };
 
-
-            
-
-            
-
         }
         public string GetModelName() {
             return Model switch
@@ -38,6 +33,28 @@ namespace InterfaceExample2 {
                 _ => "Not Found"
             };
         }
+
+        public string GetStateName() {
+            var stateName = "";
+            switch(Model) {
+                case ModelType.Gold:
+                    stateName = "Ohio";
+                    break;
+                case ModelType.Silver:
+                    stateName = "Indiana";
+                    break;
+                case ModelType.Bronze:
+                    stateName = "Kentucky";
+                    break;
+                default:
+                    stateName = "Not Found";
+                    break;
+
+            }
+            return stateName;
+        }
+
+
         public Product() { 
         
         }

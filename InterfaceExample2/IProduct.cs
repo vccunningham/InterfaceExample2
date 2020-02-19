@@ -7,6 +7,7 @@ namespace InterfaceExample2 {
 
         public double GetPrice();
         public string GetModelName();
+        public string GetStateName();
     }
 
 }

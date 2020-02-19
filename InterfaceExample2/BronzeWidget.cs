@@ -14,6 +14,9 @@ namespace InterfaceExample2 {
         public string GetModelName() {
             return Product.GetModelName();
         }
+        public string GetStateName() {
+            return Product.GetStateName();
+        }
 
         public BronzeWidget() {
             Product = new Product {
